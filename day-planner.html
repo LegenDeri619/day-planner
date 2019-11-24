@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Work Day Planner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Work Day Scheduler</h1>
+            <p class="lead date"><!--insert current day here--></p>
+            
+            
+        </div>
+    </div>
+
+    <div class = "task-container">
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>9:00 am</h3>
+            </div>
+            <div class = "col-lg-8 task-col past" id = "field9am" >
+                <!-- <ul>
+                    <li>task1jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwww wwwwwwww wwww ww w w wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</li>
+                    <li>task2</li>
+                </ul> -->
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>10:00 am</h3>
+            </div>
+            <div class = "col-lg-8 task-col present" id = "field10am">
+               
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>11:00 am</h3>
+            </div>
+            <div class = "col-lg-8 task-col" id = "field11am">
+                
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>12:00 pm</h3>
+            </div>
+            <div class = "col-lg-8 task-col" id = "field12pm">
+                <ul>
+                    <li>task1</li>
+                    <li>task2</li>
+                </ul>
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>1:00 pm</h3>
+            </div>
+            <div class = "col-lg-8 task-col" id = "field1pm">
+                <ul>
+                    <li>task1</li>
+                    <li>task2</li>
+                </ul>
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>2:00 pm</h3>
+            </div>
+            <div class = "col-lg-8 task-col" id = "field2pm">
+                <ul>
+                    <li>task1</li>
+                    <li>task2</li>
+                </ul>
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>3:00 pm</h3>
+            </div>
+            <div class = "col-lg-8 task-col" id = "field3pm">
+                <ul>
+                    <li>task1</li>
+                    <li>task2</li>
+                </ul>
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>4:00 pm</h3>
+            </div>
+            <div class = "col-lg-8 task-col" id = "field4pm">
+                <ul>
+                    <li>task1</li>
+                    <li>task2</li>
+                </ul>
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-2 time-col">
+                <h3>5:00 pm</h3>
+            </div>
+            <div class = "col-lg-8 task-col" id = "field5pm">
+                <ul>
+                    <li>task1</li>
+                    <li>task2</li>
+                </ul>
+            </div>
+            <div class = "col-lg-1 save-col">
+                save button
+            </div>
+        </div>
+
+        
+
+
+    </div>        
+        <script src="assets/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-ca.js"></script>
+    </div>
+    </body>
+</html>
