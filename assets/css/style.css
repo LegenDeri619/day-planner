@@ -26,6 +26,7 @@ body {
     color: white;
     margin: 0 1px 0 1px;
     text-overflow: wrap;
+    padding: 10px;
 }
 
 .row {
